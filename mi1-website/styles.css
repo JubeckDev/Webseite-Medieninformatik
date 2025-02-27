@@ -1,0 +1,372 @@
+/* Alle Elemente können (und sollen) verändert werden. */
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size:1.3em;
+}
+.navbar a{
+  color: rgb(24,127,245);
+}
+.navbar-brand{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  color: #323232;
+}
+*{
+  font-family: Arial;
+}
+#carouselExampleControls {
+  margin-bottom: 4rem;
+}
+
+.col, .col-lg {
+  text-align: center;
+}
+
+.card {
+  margin: 4rem 0 4rem 0;
+}
+
+footer {
+  margin-top: 4rem;
+}
+
+h1 {
+  text-align:center
+}
+/* Carousel Styling mithilfe von Chat-GPT erstellt */
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  background-image: none;
+  background-color: rgb(245,54,23);
+  border: solid 2px rgb(245,54,23);
+  display: inline-block;
+  width: 20px;
+  height: 30px;
+}
+.carousel-control-prev-icon{
+  clip-path: polygon(0% 50%, 100% 0, 100% 100%);
+}
+.carousel-control-next-icon{
+  clip-path: polygon(100% 50%, 0 0, 0 100%); 
+}
+.carousel-control-prev,
+.carousel-control-next {
+    width: 100px;
+    height: 100%;
+}
+h1{
+  font-size: 3.5em;
+}
+.quellen img{
+  height: 300px;
+}
+.quellen a{
+  color: rgb(24,127,245);
+  text-decoration: underline;
+}
+.zitierung{
+  font-size: 0.7em;
+}
+.content{
+  padding-left: 40px;
+}
+.sound{
+  text-decoration: underline;
+}
+.drehbuch p{
+  margin-bottom: 2px;
+  width: 70%; 
+  margin: auto;
+}
+.text-btm-mrg{
+  padding-bottom: 20px;
+}
+.con{
+  display: flex;
+}
+.col1{
+  width: 35%;
+}
+.col1 img{
+  height: 300px; 
+  width: 300px; 
+  object-fit: cover; 
+  display: flex; 
+  margin-left: auto; 
+  border-radius: 155px;
+}
+.col2{
+  width: 65%;
+}
+.col2 p{
+  padding: 0 15% 0 10%; 
+  font-size: 1.5em;
+}
+#fact-heading{
+  margin-top: 30px; 
+  margin-bottom: 25px;
+}
+#umfrage-heading{
+  margin-top: 40px; 
+}
+.umfrage-box{
+  margin-top: 5px;
+}
+.umfrage-inneres{
+  box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.75);
+}
+#umfragenergebnis h2{
+  font-family: 'Brush Script MT', cursive; 
+  font-size: 6em; 
+  text-align: center; 
+  padding-top: 5px;
+}
+#resultat-title{
+  text-align: center; 
+  font-size: 3.5em; 
+  margin-top: 15px; 
+  margin-bottom: 0px;
+}
+#resultat{
+  text-align: center; 
+  font-size: 2em; 
+  margin-bottom: 35px;
+}
+#resultat-text{
+  margin-bottom: 35px;
+}
+.no-mrgn{
+  margin: 0;
+}
+.bg-blue{
+  background-color: #599ef5;
+}
+.bg-darkblue{
+  background-color: rgb(24,127,245);
+}
+.bg-red{
+  background-color: #f56f57;
+}
+.bg-darkred{
+  background-color: rgb(245,54,23);
+}
+.color-blue{
+  color: #599ef5;
+}
+.color-darkblue{
+  color: rgb(24,127,245)
+}
+.color-red{
+  color: #f56f57;
+}
+.color-darkred{
+  color: rgb(245,54,23);
+}
+.umfrage-title-div{
+  height: 75px;
+}
+.umfrage-title{
+  font-family: 'Brush Script MT', cursive; 
+  margin: 0;
+  font-size: 4em;
+}
+footer a{
+  color: rgb(245,54,23);
+}
+footer a:hover{
+  color: rgb(245,54,23);
+}
+#umfragenergebnis{
+  display: none; 
+  background-color: #599ef5; 
+  width: 100%;
+  min-height: 640px; 
+}
+.impressum, .quellen{
+  width: 98%;
+  margin: auto;
+}
+.quellen h2{
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 20px;
+}
+.navbar-brand{
+  vertical-align: center; 
+  color: black !important;
+}
+.navbar img{
+  height: 2.5em; 
+  width: 5.5em;
+}
+.radiospot h1{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.radiospot audio{
+  width: 100%;
+}
+audio::-webkit-media-controls-panel {
+  background: rgb(255,255,255);
+}
+/*
+.anim-bg {
+  background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 48%, rgb(0, 128, 255) 50%, rgba(255,255,255,1) 52%, rgba(255,255,255,1) 100%);
+  background-size: 400% 100%;
+  animation: gradient 10s linear infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}*/
+.audio-screen img{
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+.audio-screen h2{
+  position: relative;
+  top: 300px;
+  font-size: 4em;
+  margin-top: -40px;
+  text-align: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  background-color: rgba(0,0,0, 0.35);
+  display: inline-block;
+  left: 50%; 
+  transform: translateX(-50%);
+  padding: 0px 10px;
+  border-radius: 10px;
+}
+.audio {
+  width: 70%; 
+  margin: -90px auto 0px auto;
+  position: relative;
+  top: 400px;
+}
+.drehbuch h2{
+  text-align: center; 
+  font-size: 2.5em;
+  padding-top: 25px;
+}
+.line{
+  height: 3px;
+  background-color: rgba(0,0,0, 0.5);
+  margin: 0 auto 5px auto;
+  width: 25%;
+  border-radius: 5px;
+  
+}
+.border-line{
+  border-top: 5px solid black;
+}
+.text-box{
+  width: 90%; 
+  height: 100%; 
+  margin: auto; 
+  text-align: left;
+}
+.text-box h3{
+  font-size: 2.5em; 
+  margin-top: 10px;
+}
+.text-box a{
+  margin-top: 10px; 
+  color: white;
+}
+.text-box a:hover{
+  color: white;
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0, 0.5);
+}
+.no-padding{
+  padding: 0;
+}
+#umfrage img{
+  height: 560px; 
+  width: 100%; 
+  object-fit: cover;
+}
+#bild1{
+  box-shadow: -4px 0px 0px 0px rgba(0,0,0, 0.4);
+}
+#bild2{
+  box-shadow: 4px 0px 0px 0px rgba(0,0,0, 0.4);
+}
+#bild1{
+  border-right: solid 2px black;
+}
+#bild2{
+  border-left: solid 2px black;
+}
+#aktuelle-seite{
+  text-align: center; 
+  font-size: 1.35em;
+}
+.navbar-nav a:hover{
+  text-decoration: none;
+}
+.navbar-nav a {
+  display: inline-block;
+  position: relative;
+}
+
+.navbar-nav a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 4px;
+  left: 0;
+  background-color: rgb(24,127,245);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar-nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.container a:hover{
+  background-color: rgb(24,127,245);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0, 0.5);
+}
+.full-width{
+  width: 100%;
+}
+
+
+@media (max-width: 991px) {
+  .navbar img{
+    height: 1.5em; 
+    width: 3.3em;
+  }
+}
+@media (max-width: 767px) {
+  #umfragenergebnis h2{
+    font-size: 4em; 
+  }
+  .con {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .col1, .col2{
+    width: 100%;
+  }
+  .col1{
+    margin-bottom: 15px;
+  }
+  .col1 img{
+    margin: auto; 
+  }
+}

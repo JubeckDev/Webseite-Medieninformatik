@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- Alle Elemente koennen (und sollen) veraendert werden. Dieses Template dient als Orientierung, wie Bootstrap in Internetseiten eingebaut werden kann. -->
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <!-- Bootstrap Javascript Dateien -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+        <!-- Eigene Styles/CSS Dateien -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Website Titel -->
+        <title>Schule früher und heute</title>
+    </head>
+    <body>
+        <p class="sr-only"><a href="#myMain">Zum Hauptinhalt</a></p>
+        <!-- Header mit Navigation Bar -->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                  <img src="images/logo.png" alt="Logo Schulgebäude">schule<span class="color-darkblue">früher</span>und<span class="color-darkred">heute</span>
+                </a>
+                <!-- Hamburger Menu (fuer mobile Endgeraete bzw. kleinere Bildschirme) -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- Custom SVG for hamburger icon with color -->
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="30" height="5" fill="rgb(245, 54, 23)"/>
+                      <rect y="12" width="30" height="5" fill="rgb(245, 54, 23)"/>
+                      <rect y="24" width="30" height="5" fill="rgb(245, 54, 23)"/>
+                    </svg>
+                  </button>
+                <!-- Navigation -->
+                <div class="navbar-collapse collapse order-3" id="navbarMenu">
+                  <ul class="navbar-nav ml-auto color-darkblue">
+                    <li class="nav-link"> <a href="index.html">Home</a> </li>
+                    <li class="nav-link"> <a href="radiospot.html">Radiospot</a> </li>
+                    <li class="nav-link active"><span class="color-blue">Quellen</span> <span class="sr-only">(aktiv)</span> </li>
+                    <li class="nav-link"> <a href="impressum.html">Impressum</a> </li>
+                  </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="quellen">
+          <h1>Quellen</h1>
+          <h2>Stockphotos</h2>
+          <div class="line"></div>
+          <h3><a href="https://www.pexels.com/de-de/foto/frau-im-schwarzen-armellosen-oberen-schreiben-auf-whiteboard-3861970/">White Boards</a><span class="zitierung"> ThisIsEngineering. (2019). Frau im schwarzen ärmellosen oberen Schreiben auf Whiteboard [Fotografie].</span></h3>
+          <h3><a href="https://www.pexels.com/de-de/foto/person-die-weisse-kreide-halt-625219/  ">Tafeln</a><span class="zitierung"> NEOSiAM 2024+. (2017). Person, Die Weiße Kreide Hält [Fotografie].</span></h3>
+          <h3><a href="https://www.pexels.com/de-de/foto/weisses-leeres-notizbuch-733857/  ">Stift und Papier</a><span class="zitierung"> Tirachard Kumtanom. (2017). Weißes Leeres Notizbuch [Fotografie].</span></h3>
+          <h3><a href="https://www.pexels.com/de-de/foto/anonyme-junge-manner-die-strasse-nahe-grunen-baumen-im-sonnenlicht-kreuzen-5553107/  ">Zu Fuß</a><span class="zitierung"> Armin Rimoldi. (2020). Anonyme Junge Männer, Die Straße Nahe Grünen Bäumen Im Sonnenlicht Kreuzen [Fotografie].</span></h3>
+          <h3><a href="https://www.pexels.com/de-de/foto/schule-lernen-ausbildung-bildung-7092347/  ">Präsenzunterricht</a><span class="zitierung"> RDNE Stock project. (2021). Schule lernen Ausbildung Bildung [Fotografie].</span></h3>
+          <h3><a href="https://www.pexels.com/de-de/foto/laptop-technologie-computer-tastatur-5486096/ ">Videokonferenzen</a><span class="zitierung"> cottonbro studio. (2020). Laptop Technologie Computer Tastatur [Fotografie].</span></h3>
+          <h3><a href="https://www.pexels.com/de-de/foto/bucher-forschung-lesen-lernen-6549364/  ">Lernen ohne KI</a><span class="zitierung"> Tima Miroshnichenko. (2021). Bücher Forschung lesen lernen [Fotografie].</span></h3>
+          <h3><a href="https://www.pexels.com/de-de/foto/marketing-smartphone-internet-technologie-17887855/  ">Lernen mit KI</a><span class="zitierung"> Sanket Mishra. (2023). Marketing Smartphone Internet Technologie [Fotografie].</span></h3>
+          <h3><a href="https://www.pexels.com/de-de/foto/person-hand-arbeiten-tippen-5717041/ ">Flexibilität von überall lernen zu können</a><span class="zitierung"> Tima Miroshnichenko. (2020). Person Hand arbeiten tippen [Fotografie].</span></h3>
+          <h3><a href="https://www.pexels.com/de-de/foto/bibliothek-high-angle-photro-159775/ ">Lernen nur vor Ort möglich</a><span class="zitierung"> Pixabay. (2016). Bibliothek High Angle Photro [Fotografie].</span></h3>
+          <h3><a href="https://www.pexels.com/de-de/foto/frau-kreativ-entspannung-laptop-4458554/  ">Lernressourcen online</a><span class="zitierung"> Ivan Samkov. (2020). Frau kreativ Entspannung Laptop [Fotografie].</span></h3>
+          <h3><a href="https://www.pexels.com/de-de/foto/stapel-bucher-433333/  ">Lernsessourcen analog</a><span class="zitierung"> Pixabay. (2017). Stapel Bücher [Fotografie].</span></h3>
+          <h3><a href="https://www.pexels.com/de-de/foto/schreibtisch-sitzung-sitzen-schule-4144101/ ">Stundenplan analog</a><span class="zitierung"> Julia M Cameron. (2020). Schreibtisch Sitzung sitzen Schule [Fotografie].</span></h3>
+          <h3><a href="https://www.pexels.com/de-de/foto/hande-frau-laptop-tippen-19915766/ ">Stundenplan online</a><span class="zitierung"> Ahmed. (2024). Hände Frau Laptop tippen [Fotografie].</span></h3>
+          <h3><a href="https://www.pexels.com/de-de/foto/frau-im-weissen-langarmhemd-beim-lesen-des-buches-3768121/ ">Hausaufgaben analog</a><span class="zitierung"> Andrea Piacquadio. (2020). Frau Im Weißen Langarmhemd Beim Lesen Des Buches [Fotografie].</span></h3>
+          <h3><a href="https://www.pexels.com/de-de/foto/schreibtisch-laptop-madchen-sitzung-17731675/ ">Hausaufgaben digital</a><span class="zitierung"> Iyke Ibeh. (2023). Schreibtisch Laptop Mädchen Sitzung [Fotografie].</span></h3>
+          <h3><a href="https://www.pexels.com/de-de/foto/madchen-teenager-student-sprechen-5306432/ ">Nachhilfe</a><span class="zitierung"> Antoni Shkraba. (2020). Mädchen Teenager Student sprechen [Fotografie].</span></h3>
+          <h3><a href="https://www.pexels.com/de-de/foto/hand-laptop-macbook-pro-internet-5077064/  ">Youtube</a><span class="zitierung"> cottonbro studio. (2020). Hand Laptop Macbook Pro Internet [Fotografie].</span></h3>
+          <h3><a href="https://www.pickpik.com/empty-classroom-school-old-classroom-blackboard-workshop-58976 ">Klassenraum alt</a><span class="zitierung"> Classroom with chairs and tables [Fotografie].</span></h3>
+          <h3><a href="https://www.freepik.com/free-photo/puzzled-young-woman-holding-phone-cant-understand-shrugging-looking-clueless-concerned-after-using-smartphone-app-standing-white-wall_19843150.htm ">Frau</a><span class="zitierung"> cookie_studio. Puzzled young woman holding phone, cant understand, shrugging and looking clueless concerned after using smartphone app, standing over white wall [Fotografie].</span></h3>
+          <h3><a href="https://pixabay.com/de/photos/salamander-amphibien-nahaufnahme-4776190/">Salamander</a><span class="zitierung"> (2020). Salamander, Natur, Amphibien [Fotografie].</span></h3>
+          <h3><a href="https://pixabay.com/de/photos/schildkr%C3%B6te-reptil-meeresschildkr%C3%B6te-9328571/">Schildkröte</a><span class="zitierung"> (2025). Schildkröte, Reptil, Natur [Fotografie].</span></h3>
+          <h3><a href="https://pixabay.com/de/photos/dinosaurier-triceratops-tier-reptil-5909156/">Dinosaurier</a><span class="zitierung"> (2021). Dinosaurier, Triceratops, Natur [Komposition].</span></h3>
+          <h3><a href="https://pixabay.com/de/photos/baumwollschwanzkaninchen-7116707/">Kaninchen</a><span class="zitierung"> (2022). Baumwollschwanzkaninchen, Wildkaninchen, Natur [Fotografie].</span></h3>
+          <h3><a href="https://pixabay.com/de/photos/nilpferd-zoo-flusspferd-tier-20965/">Nilpferd</a><span class="zitierung"> (2012). Nilpferd, Natur, Zoo [Fotografie].</span></h3>
+
+          <h2>KI-Bilder</h2>
+          <div class="line"></div>
+          <h3>IPad oder Laptop (Umfrage)</h3>
+          <p>Mit der Photoshop KI generiert, Prompt: <br><em>An amazing award-winning photo of a tablet, phone and Laptop, side view, cinematic Masterpiece, hyperdetailed, hyperrealism, modern, silver, blue, cinematic lighting, vivid</em></p>
+          <h3>Klassenraum 1 (Karussell)</h3>
+          <p>Mit der Photoshop KI generiert, Prompt: <br><em>old classroom, photorealistic, hyperrealistic</em></p>
+          <h3>Klassenraum 2 (Karussell)</h3>
+          <p>Mit der Photoshop KI generiert, Prompt: <br><em>current classrom with whiteboards, without students, hyperrealistic, photorealistic</em></p>
+          <h3>Klassenraum 3 (Karussell)</h3>
+          <p>Mit der Photoshop KI generiert, Prompt: <br><em>futuristic school, hyperrealistic</em></p>
+          <h3>Logo</h3>
+          <p>Mit der Photoshop KI generiert, Prompt: <br><em>create a school logo for "then vs. now" campaign. One side is an obviously old, rustical and unmodern school building with a clock in black and white and the other side is a school building, futuristic and modern with many windows and a colorful silver, blueish style. It should be simple, minimalistic uncomplicated but meaningful and it should look like one building, sketchy but realistic</em></p>
+         
+        </section>
+
+        <!-- Footer Abschnitt -->
+        <footer class="container">
+          <p class="float-right"><a href="#">Nach oben</a></p>
+          <p> <a href="impressum.html"> Impressum </a> </p>
+      </footer>
+    </body>
+</html>

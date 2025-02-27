@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<!-- Alle Elemente koennen (und sollen) veraendert werden. Dieses Template dient als Orientierung, wie Bootstrap in Internetseiten eingebaut werden kann. -->
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <!-- Bootstrap Javascript Dateien -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+        <!-- Eigene Styles/CSS Dateien -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Website Titel -->
+        <title>Schule früher und heute</title>
+    </head>
+    <body>
+        <p class="sr-only"><a href="#myMain">Zum Hauptinhalt</a></p>
+        <!-- Header mit Navigation Bar -->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="Logo Schulgebäude">schule<span class="color-darkblue">früher</span>und<span class="color-darkred">heute</span>
+                </a>
+                <!-- Hamburger Menu (fuer mobile Endgeraete bzw. kleinere Bildschirme) -->
+                <!--Button mithilfe von Chat-GPT erstellt-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="30" height="5" fill="rgb(245, 54, 23)"/>
+                      <rect y="12" width="30" height="5" fill="rgb(245, 54, 23)"/>
+                      <rect y="24" width="30" height="5" fill="rgb(245, 54, 23)"/>
+                    </svg>
+                  </button>
+                <!-- Navigation -->
+                <div class="navbar-collapse collapse order-3" id="navbarMenu">
+                  <ul class="navbar-nav ml-auto color-darkblue">
+                    <li class="nav-link active"><span class="color-blue">Home</span> <span class="sr-only">(aktiv)</span> </li>
+                    <li class="nav-link"> <a href="radiospot.html">Radiospot</a> </li>
+                    <li class="nav-link"> <a href="quellen.html">Quellen</a> </li>
+                    <li class="nav-link"> <a href="impressum.html">Impressum</a> </li>
+                  </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content/Inhalt -->
+        <main id="myMain">
+            <!--<h1>Schule im Wandel</h1>-->
+            <!-- Bilder Karussell -->
+            <span class="sr-only">Tour durch Klassenräumen aus verschiedenen Zeiten</span>
+            <div id="myCarousel" class="carousel slide" data-interval="false" role="presentation"> <!--  data-ride="carousel" und kein data-interval="false" für automatischer Wechsel-->
+                <div class="carousel-inner">
+                    <!-- Bild 1 -->
+                    <div class="carousel-item active">
+                        <img src="images/klassenraum1.png" class="d-block w-100" alt="Alter Klassenraum">
+                    </div>
+                    <!-- Bild 2 -->
+                    <div class="carousel-item">
+                        <img src="images/klassenraum2.png" class="d-block w-100" alt="Aktueller Klassenraum">
+                    </div>
+                    <!-- Bild 3 -->
+                    <div class="carousel-item">
+                        <img src="images/klassenraum3.jpeg" class="d-block w-100" alt="Futuristischer Klassenraum">
+                    </div>
+                </div>
+                <!-- Karussell Steuerung -->
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">vorheriges</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">nächstes</span>
+                </a>
+            </div>
+
+            <!-- Inhalt -->
+            <h1 id="fact-heading">Wusstest du schon?</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Sommerferien</h2>
+                        <p>In Deutschland kennt man, dass die Sommerferien zwischen Juni und Juli beginnen und Anfang August enden. Während unsere Sommerferien 6 Wochen lang sind, fangen die Sommerferien in Chile bereits im Dezember an und enden im März.</p>
+                    </div>
+                    <div class="col">
+                        <h2>G9-Schulsystem</h2>
+                        <p>Obwohl es ein allgemeines Grundgesetz für Bildung in Deutschland gibt, haben die 16 Bundesländer ihre eigenen Schulgesetze. Aktuell wandeln viele Gymnasien in NRW nach vielen G8 Jahren,in Richtung G9, wobei das G9 System in Niederrhein und Hessen schon immer vetreten wurde.</p>
+                    </div>
+                    <div class="col">
+                        <h2>Waldorfschulen</h2>
+                        <p>Waldorfschulen bieten ein individuelles Lernprogramm und verwenden in der Regel keine klassischen Noten. Berühmtheiten, wie Jennifer Aniston und Michael Ende besuchten ebenfalls Waldorfschulen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Umfrage -->
+            <h1 id="umfrage-heading">Umfrage</h1>
+            <div id="umfrage" class="umfrage-box">
+                <div class="row align-items-start no-mrgn umfrage-inneres">
+                    <!--Spalte 1-->
+                    <div class="col-lg bg-blue" id="umfrage-col1">
+                        <div class="umfrage-title-div">
+                            <h2 class="umfrage-title">früher</h2>
+                        </div>
+                        <!--Text und Bild-->
+                      <div class="row align-items-start">
+                        <!--Text-->
+                        <div class="col border-line no-padding full-width">
+                            <div class="text-box">
+                                <h3 id="titel1">Lernen ohne KI</h3>
+                                <p id="text1"></p>
+                                <a id="auswaehlen-btn1" class="btn bg-darkblue">Auswählen</a>
+                            </div>
+                        </div>
+                        <!--Bild-->
+                        <div class="col border-line no-padding full-width">
+                            <img src="images/lernen-ohne-ki.jpg" alt="" id="bild1">
+                        </div>
+                      </div>
+                    </div>
+                    <!--Spalte 2-->
+                    <div class="col-lg bg-red" id="umfrage-col2">
+                        <div class="umfrage-title-div">
+                            <h2 class="umfrage-title">heute</h2>
+                        </div>
+                        <!--Text und Bild-->
+                        <div class="row align-items-start">
+                          <!--Bild-->
+                          <div class="col border-line no-padding full-width">
+                            <img src="images/lernen-mit-ki.jpg" alt="" id="bild2">
+                          </div>
+                          <!--Text-->
+                          <div class="col border-line no-padding full-width">
+                            <div class="text-box">
+                                <h3 id="titel2">Lernen mit KI</h3>
+                                <p id="text2"></p>
+                                <a id="auswaehlen-btn2" class="btn bg-darkred">Auswählen</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <p id="aktuelle-seite">Frage 1/10</p>
+            </div>
+            <div class="umfrage-box" id="umfragenergebnis">
+                <h2 id="resultat-spruch">Du bist ein alter Hase!</h2>
+                <h3 id="resultat-title">Resultat</h3>
+                <h3 id="resultat">Du hast ?/10 mal "früher" ausgewählt</h3>
+                <div class="con">
+                    <!--Bild-->
+                    <div class="col1">
+                      <img id="resultat-bild" src="images/lernen-mit-ki.jpg" alt="">
+                    </div>
+                    <!--Text-->
+                    <div class="col2">
+                      <div>
+                          <p id="resultat-text">Du bist recht basic, wenn es um Schulressourcen geht! Kreide an der Tafel, handschriftliche Notizen und ein analoger Stundenplan sind für dich mehr als nur Werkzeuge! Sie sind vertraute Begleiter, auf die du dich immer verlassen kannst. Deine ruhige, aber selbstbewusste Art sorgt dafür, dass du den Überblick behältst, selbst wenn alles um dich herum hektisch wird. Du schätzt Klarheit und Struktur, willst keine Veränderungen und bleibst gerne bei einer festen Routine.</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Newsletter Card -->
+            <div class="container">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Radiospot</h2>
+                        <h3 class="card-subtitle text-muted">Was sind die Meinungen anderer?</h3>
+                        <p class="card-text">Für den Radiospot haben wir zahlreiche Personen, darunter Kommilitone, Freunde und Familie nach ihrer individuellen Meinung zur Schule von früher und heute befragt. Es ging darum unterschiedliche Perspektiven aufzugreifen &#8211; nicht darum, eine bestimmte Meinung hervorzuheben, sondern die Aspekte beider Seiten aufzuzeigen. Unser Ziel war es, beide Seiten zu repräsentieren, da es keine schwarz-weiß Lösung gibt. Stattdessen entscheiden die persönlichen Vorlieben darüber, was im Schulalltag für einen am besten funktioniert.<br><br>Unser Ziel ist es, dass sich besonders Schüler und Studenten von heute mithilfe von einer kritischen Auseinandersetzung mit den verschiedenen Bereichen, welche sich entwickelt haben, ein Bild über die Entwicklung der Schule machen.</p>
+                        <a href="radiospot.html" class="btn btn-primary float-right bg-darkblue">Zum Radiospot</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer Abschnitt -->
+        <footer class="container">
+            <p class="float-right"><a href="#">Nach oben</a></p>
+            <p> <a href="impressum.html"> Impressum </a> </p>
+        </footer>
+
+        <!--Code-->
+        <script>
+            document.getElementById('auswaehlen-btn1').addEventListener('click', function () {
+            auswaehlen(0);
+            });
+        
+            document.getElementById('auswaehlen-btn2').addEventListener('click', function () {
+            auswaehlen(1);
+            });
+        
+            const fragen = 
+            [
+                {
+                    titel1: "Lernen ohne KI",
+                    text1: "Lernen ohne KI fördert eigenständiges Denken und traditionelle Problemlösungsfähigkeiten, da es eine tiefere Auseinandersetzung mit den Themen ermöglicht. Allerdings ist dieser Ansatz oft zeitintensiver, da keine automatisierte Unterstützung oder personalisierte Inhalte verfügbar sind, die das Lernen vereinfachen.",
+                    bild1: "images/lernen-ohne-ki.jpg",
+                    titel2: "Lernen mit KI",
+                    text2: "Lernen mit KI ermöglicht einen personalisierten Lernprozess, da Inhalte individuell auf den Lernstand angepasst und sofortiges Feedback gegeben werden kann. Es besteht aber die Gefahr, dass eigenständiges Denken durch die Abhängigkeit von Technologie beeinträchtigt werden, was zum Verlust der Kreativität führen kann.",
+                    bild2: "images/lernen-mit-ki.jpg"
+                },
+                {
+                    titel1: "Tafel",
+                    text1: "Die Tafel ermöglicht es, Gedanken schnell und übersichtlich mit Kreide festzuhalten, und das Wischen mit dem Schwamm schafft immer wieder Platz für neue Ideen. Ohne technische Hilfsmittel hilft sie dabei, sich auf das Wesentliche zu konzentrieren. Allerdings können der Staub und das Quietschen, das durch Kreide entsteht, unangenehm sein.",
+                    bild1: "images/tafel.jpg",
+                    titel2: "White Board",
+                    text2: "Das Whiteboard bietet Flexibilität, Notizen und Skizzen schnellstmöglich zu ändern und Fehler sofort zu korrigieren. Es ist besonders praktisch für Teamarbeit, da Ideen schnell umgesetzt werden können. Allerdings verschleißen Whiteboards und Marker mit der Zeit und müssen regelmäßig ausgetauscht werden. Zudem kann die begrenzte Fläche eines Whiteboards bei größeren Projekten schnell zum Problem werden.",
+                    bild2: "images/whiteboard.jpg"
+                },
+                {
+                    titel1: "Stift und Papier",
+                    text1: "Stift und Papier sind eine schnelle und einfache Möglichkeit, Gedanken festzuhalten und fördern gleichzeitig die Produktivität. Man kann immer und überall schreiben und wichtige Gedanken festhalten. Dennoch kann es bei umfangreichen Notizen unübersichtlich werden. Im Unterricht kann es auch schwer werden gleichzeitig zuzuhören und auf Papier mitzuschreiben.",
+                    bild1: "images/stift-und-papier.jpg",
+                    titel2: "iPad oder Laptop",
+                    text2: "Das iPad und der Laptop bieten Flexibilität und viele Funktionen, wodurch Notizen schnell getippt, bearbeitet und gespeichert werden können, was Multitasking leichter macht.  Allerdings ist man auf regelmäßige Aufladung angewiesen, und bei technischen Problemen kann der Arbeitsfluss gestört werden.",
+                    bild2: "images/ipad-oder-laptop.png"
+                },
+                {
+                    titel1: "Zu Fuß",
+                    text1: "Zu Fuß zur Schule zu gehen fördert die Gesundheit und körperliche Fitness und ist dazu noch umweltfreundlich und verursacht keine Kosten. Jedoch kann der Weg bei schlechtem Wetter unangenehm sein. Für Schüler, die weiter entfernt wohnen, kann der Fußweg zu lang und unpraktisch sein.",
+                    bild1: "images/zu-fuß.jpg",
+                    titel2: "Öffis",
+                    text2: "Öffentliche Verkehrsmittel sind umweltfreundlich und kostengünstig. Hinzufügend bieten sie kostengünstige Alternativen zum eigenen Fahrzeug. Sie sind aber nicht immer besonders zuverlässig, da Verspätungen und Ausfälle spontan aufkommen können.",
+                    bild2: "images/öffis.jpeg"
+                },
+                {
+                    titel1: "Lernressourcen analog",
+                    text1: "Analoge Lernressourcen, wie Bücher und Arbeitshefte fördern das konzentrierte Arbeiten ohne Ablenkungen durch digitale Geräte. Dafür sind analoge Materialien weniger flexibel und nicht so leicht zugänglich. Sie bieten weniger Abwechslung, was das Lernen weniger dynamisch machen kann.",
+                    bild1: "images/lernressourcen-analog.jpg",
+                    titel2: "Lernressourcen online",
+                    text2: "Online-Lernressourcen sind jederzeit und überall zugänglich, was flexible Lernzeiten ermöglicht. Sie bieten eine Vielzahl an Materialien, wie Videos, Apps und Online-Übungen, die das Lernen abwechslungsreich gestalten. Die Qualität der Online-Ressourcen kann stark variieren, was zu Unsicherheiten führen kann. Ohne Selbstdisziplin kann es schwierig sein, beim Lernen motiviert zu bleiben.",
+                    bild2: "images/lernressourcen-online.jpg"
+                },
+                {
+                    titel1: "Präsenzunterricht",
+                    text1: "Der Präsenzunterricht ermöglicht direkte Interaktion zwischen Lehrenden und Lernenden, was dabei hilft Fragen zu klären.Die Lernatmosphäre im Klassenzimmer kann motivierend wirken und den sozialen Austausch zwischen den Schülern unterstützen. Präsenzunterricht ist oft zeitlich und örtlich gebunden, was weniger Flexibilität bietet. Bei größeren Klassen kann es schwieriger sein, individuell auf die Bedürfnisse jedes Schülers einzugehen.",
+                    bild1: "images/präsenz-unterricht.jpg",
+                    titel2: "Videokonferenzen",
+                    text2: "Videokonferenzen ermöglichen eine schnelle und kostengünstige Kommunikation. Außerdem sind sie flexibel, da man auch von Zuhause aus teilnehmen kann. Technische Probleme, wie schlechte Internetverbindung oder Audio-Probleme können die Kommunikation stören. Der fehlende persönliche Kontakt zwischen Schüler und Lehrer kann das Verständnis und die Interaktion einschränken, da man leichter abgelenkt ist.",
+                    bild2: "images/videokonferenz.jpg"
+                },
+                {
+                    titel1: "Vor Ort lernen",
+                    text1: "Das Lernen mit Präsenz an einem festen Ort bietet eine strukturierte Umgebung, die Konzentration und Routine fördert. Direkte Kommunikation mit Lehrenden und Mitschülern vertieft das Verständnis. Zudem stärkt die soziale Dynamik die Motivation und den Gemeinschaftssinn. Die örtliche Präsenz schränkt jedoch zeitliche und örtliche Flexibilität ein, da Lernende an bestimmte Zeiten und Orte gebunden sind.",
+                    bild1: "images/lernen-vor-ort.jpg",
+                    titel2: "Lernen von überall",
+                    text2: "Das Lernen von überall bietet maximale Flexibilität, da Lernende unabhängig von Ort und Zeit auf Inhalte zugreifen können.Besonders für selbstbestimmtes Lernen ist diese Freiheit ein großer Vorteil, da Wissen jederzeit verfügbar ist. Diese Flexibilität fordert auch Disziplin, da die klare Struktur eines festen Lernumfelds fehlt und man den Freiraum schnell überschätzt.",
+                    bild2: "images/lernen-überall.jpg"
+                },
+                {
+                    titel1: "Stundenplan analog",
+                    text1: "Ein analoger Stundenplan bietet eine klare und übersichtliche Struktur für den Schulalltag. Er ist jederzeit ohne technische Hilfsmittel verfügbar und kann je nach dem individuell gestaltet oder angepasst werden. Das handschriftliche Eintragen von Terminen und Fächern fördert zudem das Bewusstsein für Organisation und Zeitmanagement. Allerdings sind Änderungen weniger flexibel und erfordern oft manuelles Nachtragen von Korrekturen.",
+                    bild1: "images/stundenplan-analog.jpg",
+                    titel2: "Stundenplan online",
+                    text2: "Im Online-Stundenplan können Änderungen schnell aktualisiert werden und Benachrichtigungen erinnern an bevorstehende Termine. Zudem ist er jederzeit über verschiedene Geräte zugänglich, was ihn besonders praktisch macht. Jedoch ist für die Nutzung eine Internetverbindung erforderlich und technische Störungen können den Zugriff erschweren. Man kann sich auch nicht immer darauf verlassen, dass Ausfälle rechtzeitig aktualisiert werden.",
+                    bild2: "images/stundenplan-online.jpg"
+                },
+                {
+                    titel1: "Hausaufgaben analog",
+                    text1: "Hausaufgaben auf Papier fördern die Konzentration und das Verständnis durch handschriftliches Arbeiten. Man wird nicht durch digitale Geräte abgelenkt, was ein fokussiertes Arbeiten ermöglicht. Dennoch können handschriftliche Aufgaben verloren gehen, und Korrekturen sind aufwändiger.",
+                    bild1: "images/hausaufgaben-analog.jpg",
+                    titel2: "Hausaufgaben digital",
+                    text2: "Digitale Hausaufgaben bieten den Vorteil, dass sie ortsunabhängig erledigt werden können, solange ein Internetzugang besteht. Zudem können sie oft sofort überprüft und korrigiert werden. Durch andere digitale Inhalte und Geräte besteht die Gefahr schnell abgelenkt zu werden. Das längere Arbeiten am Bildschirm führt zur Ermüdung, was die Konzentration beeinträchtigt.",
+                    bild2: "images/hausaufgaben-digital.jpg"
+                },
+                {
+                    titel1: "Persönliche Nachhilfe",
+                    text1: "Bei der Nachhilfe erhält der Lernende sofortiges Feedback und Fragen können direkt geklärt werden. Der persönliche Kontakt fördert zudem eine engere Beziehung zwischen Nachhilfelehrer und Schüler, was das Vertrauen stärkt und die Motivation erhöht. Jedoch ist die Nachhilfe oft zeitlich und örtlich gebunden, was weniger Flexibilität bietet. Zudem können die Kosten höher sein, was sich nicht jeder leisten kann.",
+                    bild1: "images/nachhilfe.jpg",
+                    titel2: "Youtube als Nachhilfe",
+                    text2: "YouTube stellt tausende, leicht zugängliche Lernvideos zu nahezu jedem Thema kostenfrei verfügbar. Es ermöglicht visuelles Lernen, was den Lernprozess für viele verständlicher und interessanter macht. Jedoch muss man bei der Qualität der Inhalte aufmerksam sein. Es kann schwierig sein, verlässliche Quellen zu finden und Ablenkungen durch andere Videos oder Werbung kann den Lernfluss stören.",
+                    bild2: "images/youtube.jpg"
+                }
+            ]
+            var aktuelleSeite = 0;
+            var aktuellerScore = 0;
+        
+            function auswaehlen(buttonIndex){
+                aktuelleSeite++;
+                aktuellerScore += buttonIndex;
+                if(aktuelleSeite >= 10){
+                    zeigeUmfragenergebnisse();
+                    return;
+                }
+                updateUmfragenUI();
+            }
+
+            const resultate = [
+                {
+                    spruch: "Der urzeitalte Dino",
+                    bild: "images/tier1.jpg",
+                    text: "Du bist recht basic, wenn es um Schulressourcen geht! Kreide an der Tafel, handschriftliche Notizen und ein analoger Stundenplan sind für dich mehr als nur Werkzeuge! Sie sind vertraute Begleiter, auf die du dich immer verlassen kannst. Deine ruhige, aber selbstbewusste Art sorgt dafür, dass du den Überblick behältst, selbst wenn alles um dich herum hektisch wird. Du schätzt Klarheit und Struktur, willst keine Veränderungen und bleibst gerne bei einer festen Routine."
+                },
+                {
+                    spruch: "Die nostalgische Schildkröte",
+                    bild: "images/tier2.jpg",
+                    text: "Du bist jemand, der eine feste Routine besitzt, aber auch gelegentlich seine Türen offen hält. Die klassische Tafel, handschriftliche Notizen und Papier-Stundenpläne sind dir vertraut und geben dir Struktur. Gleichzeitig weißt du die Vorteile moderner Technologien zu schätzen, nutzt sie aber eher seltener als Unterstützung. Diese Mischung aus Traditionalität und Offenheit macht dich vielseitig, ohne dass du dich zu stark von einem Stil abhängig machst. So bleibst du flexibel und schiebst dich nicht in eine Kategorie. Du tust das, was für dich funktioniert."
+                },
+                {
+                    spruch: "Der ausgeglichene Hase",
+                    bild: "images/tier3.jpg",
+                    text: "Du siehst beide Welten wie ein Buffet des Lernens. Mal greifst du zur Kreide, mal zum Tablet; je nachdem, was gerade am Besten schmeckt. Für dich zählt nicht, ob etwas analog oder digital ist, sondern ob es funktioniert. Diese ausgewogene Mischung macht dich anpassungsfähig und offen für verschiedene Methoden. Du wählst flexibel, was dir hilft und behältst so immer die Kontrolle über deinen Schulalltag."
+                },
+                {
+                    spruch: "Das neuzeitige Nilpferd",
+                    bild: "images/tier4.jpeg",
+                    text: "Du bist ein echter Fan der modernen Schulmethoden! Die digitale Welt hat dich überzeugt und du greifst gerne auf Online-Tools zurück. Du schätzt die Vielseitigkeit, die dir diese Technologien bieten und nutzt die Vorteile der schnellen Aktualisierung und Anpassung. Gleichzeitig ermöglichen dir digitale Hilfsmittel einen klaren Ablauf und vereinfachen das Lernen. Du bist mit den neuesten Trends vertraut und weißt genau, wie du Technologie effektiv in deinen Alltag integrierst. Dein Schulalltag ist so effizient und gut organisiert, dass du jederzeit den Überblick behältst und die Kontrolle hast."
+                },
+                {
+                    spruch: "Der anpassungsfähige Salamander",
+                    bild: "images/tier5.jpeg",
+                    text: "Du bist ein echter Technikprofi, der die neusten digitalen Methoden liebt! Tablets, Online-Stundenpläne und Lernplattformen sind für dich unverzichtbar. Du schätzt die Möglichkeit, jederzeit auf deine Lernmaterialien zuzugreifen. Für dich ist der Einsatz von Technologie nicht nur praktisch, sondern auch ein echter Vorteil, der dir hilft, organisiert und effizient zu bleiben. Du nutzt die neuesten digitalen Ressourcen, um deinen Schulalltag optimal zu gestalten und immer einen Schritt voraus zu sein. So bleibst du nicht nur up-to-date, sondern nutzt die vielen Vorteile der digitalen Welt voll aus!"
+                }
+            ];
+
+            function zeigeUmfragenergebnisse(){
+                document.getElementById("umfrage").style.display = 'none';
+                document.getElementById("umfragenergebnis").style.display = 'block';
+                
+                var finalerScore = aktuellerScore;
+        
+                if(finalerScore < 5){
+                    document.getElementById("resultat").textContent = "Du hast " + (10 - finalerScore) + "/10 mal \"früher\" ausgewählt.";
+                    document.getElementById("umfragenergebnis").style.backgroundColor='#599ef5';
+                }
+                else if(finalerScore == 5){
+                    document.getElementById("resultat").textContent = "Du hast beides gleich häufig ausgewählt.";
+                    document.getElementById("umfragenergebnis").style.backgroundColor='#a786a6';
+                }
+                else{
+                    document.getElementById("resultat").textContent = "Du hast " + finalerScore + "/10 mal \"heute\" ausgewählt.";
+                    document.getElementById("umfragenergebnis").style.backgroundColor='#f56f57';
+                }
+                
+                var resultat = resultate[0];
+                if(finalerScore <= 1){
+                    var resultat = resultate[0];
+                }
+                else if(finalerScore <= 4){
+                    var resultat = resultate[1];
+                }
+                else if(finalerScore == 5){
+                    var resultat = resultate[2];
+                }
+                else if(finalerScore <= 8){
+                    var resultat = resultate[3];
+                }
+                else{
+                    var resultat = resultate[4];
+                }
+                document.getElementById("resultat-spruch").textContent = resultat.spruch;
+                document.getElementById("resultat-bild").src = resultat.bild;
+                document.getElementById("resultat-text").textContent = resultat.text;
+        
+            }
+            function updateUmfragenUI(){
+                var frage = fragen[aktuelleSeite];
+                document.getElementById("titel1").textContent = frage.titel1;
+                document.getElementById("text1").textContent = frage.text1;
+                document.getElementById("bild1").src = frage.bild1;
+                document.getElementById("titel2").textContent = frage.titel2;
+                document.getElementById("text2").textContent = frage.text2;
+                document.getElementById("bild2").src = frage.bild2;
+        
+                document.getElementById("aktuelle-seite").textContent = "Frage " + (aktuelleSeite + 1) + "/10";
+            }
+        
+            updateUmfragenUI();
+        </script>
+    </body>
+</html>
